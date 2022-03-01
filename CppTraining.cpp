@@ -119,3 +119,30 @@ int main()
 system("paused>0");
 }
 ---------------------------------------------------------------------------------------
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	// Count digits of a number
+	
+  cout << "Number: ";
+	int number;
+	cin >> number; 
+
+	if(number == 0)
+		cout << "You have entered 0.\n";
+	else {
+		if(number < 0)
+			number = -1 * number;		
+
+		int counter = 0;
+		while(number > 0) {
+			number = number/10;
+			counter++;
+		}
+		cout << "Number contains" << counter << " digits"
+	}
+  
+system("paused>0");
+}
