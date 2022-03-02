@@ -146,3 +146,48 @@ int main()
   
 system("paused>0");
 }
+---------------------------------------------------------------------------------------
+#include <iostream>
+using namespace std;
+
+void showMenu() {
+	cout << "****************MENU*****************" << endl;	
+	cout << "1. Check Balance" << endl;
+	cout << "2. Deposit" << endl;
+	cout << "3. Withdraw" << endl;
+	cout << "4. Exit" <, endl;
+	cout << "*************************************" << endl
+}
+
+int main()
+{
+	int option;
+	double balance = 500;
+
+	do {
+		showMenu();
+		cout << "Option: ";
+		option >> option;
+		system("cls");
+
+		switch(option) {
+			case 1: cout << "Balance is: " << balance << "$" << endl; break;
+			case 2: cout << "Deposit amount: " << depositAmount << "$" << endl;
+				double depositAmount;
+				cin >> depositDouble;
+				balance = balance + depositAmount;
+				break;
+			case 3: cout << "Balance is: " << balance << "$" << endl;
+				double withdrawAmount;
+				cin >> withdrawDouble;
+				if (withdrawAmount <= balance)
+					balance -= withdrawAmount
+				else 
+					cout << "Not enough money." << endl;
+				balance = balance - withdrawAmount;
+				break;
+		}
+	} while (option != 4);
+
+	system("paused>0");
+}
