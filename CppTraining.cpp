@@ -228,3 +228,28 @@ void main()
 
 system("paused>0");
 }
+---------------------------------------------------------------------------------------
+#include <iostream>
+using namespace std;
+
+void main()
+{
+	int grade, sum = 0;
+
+	for(int i = 0; i < 3; i++) {
+		
+		do {
+			cout << "Enter grade " << i+1 << ": ";
+			cin >> grade; 
+
+		} while (grade < 1 || grade > 5);
+		sum = sum + grade;		
+
+	}
+
+	cout << "Sum = " << sum << endl;
+	cout << "Your average grade is" << sum/3.0 <<endl;
+
+
+system("paused>0");
+}
