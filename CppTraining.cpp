@@ -253,3 +253,24 @@ void main()
 
 system("paused>0");
 }
+---------------------------------------------------------------------------------------
+#include <iostream>
+using namespace std;
+
+void main()
+{
+	// The factorial of a number
+	// 6! = 1*2*3*4*5*6 = 720
+	
+	int number, factorial = 1;
+	cout << "Number: ";
+	cin >> number; 
+
+	for (int i = 1 ; i <= number ; i++) {
+		factorial = factorial * i
+	}
+	
+	cout << number << "!=" << factorial;
+
+system("paused>0");
+}
